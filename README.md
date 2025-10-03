@@ -1,12 +1,10 @@
 # Bank_backend
 
-#Schema for Customer table
+**#Schema for Customer table**
 
 CREATE TABLE Customer (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    
     customer_id VARCHAR(20) NOT NULL UNIQUE,
-    
     account_no VARCHAR(20) NOT NULL UNIQUE,
     customer_name VARCHAR(200) NOT NULL,
     Address VARCHAR(100) NOT NULL,
@@ -17,7 +15,8 @@ CREATE TABLE Customer (
     account_type VARCHAR(20) NOT NULL
 );
 
-#Schema for Account table
+**#Schema for Account table**
+
 CREATE TABLE Account (
     id INT AUTO_INCREMENT PRIMARY KEY,
     account_no VARCHAR(20) NOT NULL UNIQUE,
